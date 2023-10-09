@@ -6,3 +6,4 @@ All images were compressed and converted to webp versions ensuring best performa
 
 Majority of measures are in rem or em to ensure scalability and accessibility 
 
+
