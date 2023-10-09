@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Syne';
+    src: url('../fonts/Syne/Syne-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/* General  */
+html {
+    font-size: 16px;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Syne';
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+h3.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.padding-global {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.line {
+    
+}
+
+button {
+    font-family: 'Nunito';
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+button > img {
+    width: 24px;
+}
+
+.container-large {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Header */
+header {
+    
+}
+
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: color 100ms ease-out;
+}
+
+
+header a:hover {
+    color: lightslategray;
+}
+
+
+header .mobile {
+    display: none;
+}
+
+
+header .hamburger {
+    display: none;
+}
+
+
+header .logo {
+    height: 40px;
+}
+
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+header ul li {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+
+
+/* Hero */
+
+.hero .container{
+    padding: 7rem 0rem;
+    border: 1px solid red;
+}
+
+.date {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.hero .main-image {
+    width: 450px;
+} 
+
+.hero .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}

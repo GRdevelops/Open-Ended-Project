@@ -1,0 +1,6 @@
+Downloaded two custom fonts from Google Fonts, one for heading, one for normal text.
+
+Used the variable version of the font to implement all the font-weight faster and make the code cleaner
+
+Downloaded images from Unsplash and converted them to webp versions to improve performance and keep up with best practices
+

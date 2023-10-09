@@ -1,0 +1,8 @@
+Downloaded two custom fonts from Google Fonts, one for heading, one for normal text.
+
+Used the variable version of the font to implement all the font-weight faster and make the code cleaner.
+
+All images were compressed and converted to webp versions ensuring best performance and best practices.
+
+Majority of measures are in rem or em to ensure scalability and accessibility 
+
