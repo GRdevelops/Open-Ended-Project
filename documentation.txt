@@ -7,3 +7,14 @@ All images were compressed and converted to webp versions ensuring best performa
 Majority of measures are in rem or em to ensure scalability and accessibility 
 
 
+
+
+
+
+
+
+// TO DO
+
+*Make article div clickable v
+
+*Make hero article clickable

@@ -106,8 +106,6 @@ button {
     cursor: pointer;
     transition: all 150ms ease;
     text-wrap: nowrap;
-    border: 1px solid red;
-
 }
 
 button:hover {
@@ -119,12 +117,11 @@ button > img {
     height: 16px;
     margin-left: 8px;
     transition: all 300ms ease;
-    border: 1px solid red;
 }
 
 button:hover > img {
     height: 16px;
-    margin-left: 12px;
+    transform: translateX(8px);
 }
 
 .container-large {
@@ -141,7 +138,8 @@ button:hover > img {
 }
 
 .vertical-padding{
-    padding: 7rem 0rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .date {
@@ -199,11 +197,11 @@ header ul li {
 
 #main-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     float: right;
 } 
 
-.hero .two-columns {
+#hero .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -212,19 +210,100 @@ header ul li {
 /* Blogs */
 
 .articles {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
     row-gap: 4rem;
-    column-gap: 1rem;
+    column-gap: 4rem;
 }
 
-.article {
-    width: 500px;
-}
-
-.article img {
-    width: 100%;
+.article .wrapper {
+    overflow: hidden;
+    height: 400px;
     margin-bottom: 1rem;
+}
+
+.article .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms ease;
+    opacity: 0.9;
+}
+
+a.article {
+    color: inherit;
+}
+
+a.article:hover button {
+    color: orange;
+}
+
+a.article:hover .thumbnail {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+}
+
+a.article:hover button > img {
+    transform: translateX(8px);
+}
+
+#h2-container {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#h2-container h2 {
+    margin: 0;
+}
+
+#categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.category+.category {
+    margin-left: 1rem;
+}
+
+.category {
+    padding: 1rem 1.5rem;
+    border: 2px solid #222;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.inverted {
+    background-color: #222;
+    color: white;
+}
+
+
+/* Newsletter */
+
+section#newsletter {
+    background-color: black;
+    background-image: url('../images/Pattern.webp');
+    color: white;
+}
+
+#newletter h2 {
+
+}
+
+#newsletter .inverted {
+    background-color: white;
+    color: black;
+}
+
+#newsletter p {
+    color: #ddd;
+}
+
+#newsletter button {
+    color: white;
 }

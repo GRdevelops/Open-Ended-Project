@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
-<body class="padding-global">
+<body>
 
     <header>
-        <div class="content container-large"> 
+        <div class="content container-large padding-global"> 
             <!-- Logo -->
             <a href=""><img class="logo" src="./resources/images/Logo.jpg" alt=""></a>           
         
             <nav class="desktop">
                 <!-- Navigation -->
                 <ul class="desktop">
-                    <li><span  class="line" style="width: 8\px; height: 2px;"></span></li>
+                    <li><span  class="line" style="width: 8px; height: 2px;"></span></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">Contact</a></li>
@@ -40,16 +40,15 @@
     </header>
 
     <main>
-        <section class="hero container-large">
-            <div class="vertical-padding">
-                <!-- Wrap articles in <article></article> -->
+        <section id="hero">
+            <div class="container-large vertical-padding padding-global">
                 <h1>Welcome to the Blog</h1>
                 <article>
                     <div class="two-columns">
                         <div class="width-medium">
                             <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                            <h3 class="article-title">Try out the sorting feature I have built with JavaScript down below.</h3>
-                            <p>Scroll a little bit more and you will have the chance to try it out. This is just placeholder text and yes links don't work ;)</p>
+                            <h3 class="article-title">Try out the sorting feature below, it's built with JavaScript!</h3>
+                            <p>Scroll a little bit more and you will have a chance to try out this useful feature. This is just placeholder text and yes links don't work ;)</p>
                             <div class="spacer-s"></div>
                             <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                         </div>
@@ -61,60 +60,75 @@
             </div>
         </section>
 
-        <section class="container-large"><img src="./resources/images/Line-custom.png" alt=""></section>
+        <section class="container-large padding-global"><img src="./resources/images/Line-custom.png" alt=""></section>
 
-        <section id="blogs" class="container-large vertical-padding">
-            <!-- h2 & categories -->
-            <div id="h2&categories">
-                <div>
-                    <h2>Latest News & Blogs</h2>
+        <section id="blogs">
+            <div class="container-large padding-global vertical-padding">
+                <div id="h2-container">
+                    <div class="news-heading">
+                        <h2>Latest News & <span class="inverted">Blogs</span></h2>
+                    </div>
+                    <div id="categories">
+                        <div class="category inverted">
+                            <span>All</span>
+                        </div>
+                        <div class="category">
+                            <span>Nature</span>
+                        </div>
+                        <div class="category">
+                            <span>3D Design</span>
+                        </div>
+                        <div class="category">
+                            <span>Family</span>
+                        </div>
+                    </div>
                 </div>
-                <div id="categories">
-                    <div class="category inverted">
-                        <span>All</span>
-                    </div>
-                    <div class="category">
-                        <span>Nature</span>
-                    </div>
-                    <div class="category">
-                        <span>3D Design</span>
-                    </div>
-                    <div class="category">
-                        <span>Family</span>
-                    </div>
+                <div class="articles">
+                    <a class="article">
+                        <div class="wrapper"><img class="thumbnail" src="./resources/images/3ddesign1.webp" alt=""></div>
+                        <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
+                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
+                    </a>
+                    <a class="article">
+                        <div class="wrapper"><img class="thumbnail" src="./resources/images/3ddesign2.webp" alt=""></div>
+                        <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
+                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
+                    </a>
+                    <a class="article">
+                        <div class="wrapper"><img class="thumbnail" src="./resources/images/family.webp" alt=""></div>
+                        <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
+                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
+                    </a>
+                    <a class="article">
+                        <div class="wrapper"><img class="thumbnail" src="./resources/images/nature1-min.webp" alt=""></div>
+                        <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
+                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
+                    </a>
+                    <a class="article">
+                        <div class="wrapper"><img class="thumbnail" src="./resources/images/nature2.webp" alt=""></div>
+                        <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
+                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
+                    </a>
                 </div>
             </div>
-            <div class="articles">
-                <div class="article">
-                    <img src="./resources/images/3ddesign1.webp" alt="">
-                    <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                    <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
-                    <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
-                </div>
-                <div class="article">
-                    <img src="./resources/images/3ddesign1.webp" alt="">
-                    <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                    <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
-                    <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
-                </div>
-                <div class="article">
-                    <img src="./resources/images/3ddesign1.webp" alt="">
-                    <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                    <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
-                    <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
-                </div>
-                <div class="article">
-                    <img src="./resources/images/3ddesign1.webp" alt="">
-                    <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                    <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
-                    <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
-                </div>
-                <div class="article">
-                    <img src="./resources/images/3ddesign1.webp" alt="">
-                    <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                    <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
-                    <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
-                </div>
+        </section>
+        <section id="newsletter">
+            <div class="container padding-global">
+                <h2>Never Miss a Single <span class="inverted">News</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et uis nostrud exercitation ullamco laboris nisi.</p>
+                <!-- fare restrizione email JavaScript -->
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" id="mail" placeholder="Enter your best e-mail address...">
+                    <button type="submit" name="subscribe" id="submit">
+                        Subscribe
+                        <img src="./resources/images/arrow-star.svg" alt="">
+                    </button>
+                </form>
             </div>
         </section>
     </main>
