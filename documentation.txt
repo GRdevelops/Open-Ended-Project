@@ -18,3 +18,5 @@ Majority of measures are in rem or em to ensure scalability and accessibility
 *Make article div clickable v
 
 *Make hero article clickable
+
+*How to use favicons

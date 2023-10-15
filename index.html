@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="https://kit.fontawesome.com/943f79acea.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -31,9 +32,9 @@
             <nav class="mobile">
                 <!-- Navigation -->
                 <ul class="desktop">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#blogs">News</a></li>
+                    <li><a href="#newsletter">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,13 +48,13 @@
                     <div class="two-columns">
                         <div class="width-medium">
                             <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                            <h3 class="article-title">Try out the sorting feature below, it's built with JavaScript!</h3>
+                            <h3 class="article-title"><a href="" style="text-decoration: none; color: inherit;">Try out the sorting feature below, it's built with JavaScript!</a></h3>
                             <p>Scroll a little bit more and you will have a chance to try out this useful feature. This is just placeholder text and yes links don't work ;)</p>
                             <div class="spacer-s"></div>
                             <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                         </div>
                         <div>
-                            <img id="main-image" src="./resources/images/hero.webp" alt="">
+                            <a href="#"><img id="main-image" src="./resources/images/hero.webp" alt=""></a>
                         </div>
                     </div>
                 </article>
@@ -117,13 +118,13 @@
                 </div>
             </div>
         </section>
-        <section id="newsletter">
-            <div class="container padding-global">
-                <h2>Never Miss a Single <span class="inverted">News</span></h2>
+        <section id="newsletter" class="container-large">
+            <div class="container padding-global vertical-padding">
+                <h2 >Never Miss a Single <span class="inverted">News</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et uis nostrud exercitation ullamco laboris nisi.</p>
                 <!-- fare restrizione email JavaScript -->
                 <form action="subscribe.php" method="post">
-                    <input type="email" name="email" id="mail" placeholder="Enter your best e-mail address...">
+                    <input type="email" name="email" id="email" placeholder="Enter your best email address...">
                     <button type="submit" name="subscribe" id="submit">
                         Subscribe
                         <img src="./resources/images/arrow-star.svg" alt="">
@@ -134,7 +135,42 @@
     </main>
 
     <footer>
+        <div class="upper border-bottom">
+            <span class="heading">Let's start together.</span>
+            <span class="contact"><a href="tel:167712444227">1-677-124-44227</a> // <a href="mailto:hello@softlight.design">hello@softlight.design</a></span>
+        </div>
 
+        <div class="middle border-bottom">
+            <div>
+                <img class="logo" src="./resources/images/Logo.jpg" alt="">
+            </div>
+            <div class="col">
+                <h3>Pages</h3>
+                <a href="">Home</a>
+                <a href="">News</a>
+            </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <a style="max-width: 20ch; line-height: 1.5;" href="">741 New South Head Rd, Triple Bay SWFW 3148, New York</a>
+            </div>
+            <div class="col">
+                <h3>Newsletter</h3>
+                <form action="" style="justify-content: flex-start;">
+                    <input type="email" name="email" id="email" placeholder="Enter your email...">
+                    <button style="background-color: #222;" type="submit" name="subscribe" id="submit">Stay Updated!</button>
+                </form>
+                <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            
+        </div>
     </footer>
 
 </body>
