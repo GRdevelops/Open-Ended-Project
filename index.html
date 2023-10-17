@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <script src="https://kit.fontawesome.com/943f79acea.js" crossorigin="anonymous"></script>
+    <script src="./resources/js/script.js" async></script>
 </head>
 <body>
 
@@ -22,6 +23,8 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">Contact</a></li>
+                    <li><a href="" class="btn">See the code</a></li>
+                    <li><a href="" class="btn blue">Back to portfolio</a></li>
                 </ul>
             </nav>
 
@@ -49,12 +52,12 @@
                         <div class="width-medium">
                             <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
                             <h3 class="article-title"><a href="" style="text-decoration: none; color: inherit;">Try out the sorting feature below, it's built with JavaScript!</a></h3>
-                            <p>Scroll a little bit more and you will have a chance to try out this useful feature. This is just placeholder text and yes links don't work ;)</p>
+                            <p>Scroll a little bit more and you will have a chance to try out this useful feature. This is mostly placeholder text and yes links don't work ;)</p>
                             <div class="spacer-s"></div>
                             <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                         </div>
                         <div>
-                            <a href="#"><img id="main-image" src="./resources/images/hero.webp" alt=""></a>
+                            <a href="#"><div class="wrapper"><img class="thumbnail" id="main-image" src="./resources/images/hero.webp" alt=""></a></div>
                         </div>
                     </div>
                 </article>
@@ -70,88 +73,92 @@
                         <h2>Latest News & <span class="inverted">Blogs</span></h2>
                     </div>
                     <div id="categories">
-                        <div class="category inverted">
+                        <div id="all" class="category inverted">
                             <span>All</span>
                         </div>
-                        <div class="category">
+                        <div id="nature" class="category">
                             <span>Nature</span>
                         </div>
-                        <div class="category">
+                        <div id="3d-design" class="category">
                             <span>3D Design</span>
                         </div>
-                        <div class="category">
+                        <div id="family" class="category">
                             <span>Family</span>
                         </div>
                     </div>
                 </div>
                 <div class="articles">
-                    <a class="article">
+                    <a class="article" data-category="3d-design">
                         <div class="wrapper"><img class="thumbnail" src="./resources/images/3ddesign1.webp" alt=""></div>
                         <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <h3 class="article-title">Mastering the Art of 3D Printing: From Concept to Creation</h3>
                         <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                     </a>
-                    <a class="article">
+                    <a class="article" data-category="3d-design">
                         <div class="wrapper"><img class="thumbnail" src="./resources/images/3ddesign2.webp" alt=""></div>
                         <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <h3 class="article-title">Pushing the Boundaries of Creativity: The Future of 3D Design in Art and Innovation</h3>
                         <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                     </a>
-                    <a class="article">
+                    <a class="article" data-category="family">
                         <div class="wrapper"><img class="thumbnail" src="./resources/images/family.webp" alt=""></div>
                         <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <h3 class="article-title">The Importance of Quality Time: Strengthening Family Bonds</h3>
                         <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                     </a>
-                    <a class="article">
+                    <a class="article" data-category="nature">
                         <div class="wrapper"><img class="thumbnail" src="./resources/images/nature1-min.webp" alt=""></div>
                         <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <h3 class="article-title">Exploring the Hidden Wonders of Underwater Ecosystems</h3>
                         <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                     </a>
-                    <a class="article">
+                    <a class="article" data-category="nature">
                         <div class="wrapper"><img class="thumbnail" src="./resources/images/nature2.webp" alt=""></div>
                         <div class="date" style="display: flex; column-gap: 1rem;"><span>Posted on October 8, 2023</span><div style="flex-grow: 1; margin: 0;"><span class="line" style="width: 100%;"></span></div></div>
-                        <h3 class="article-title">We speak to Aimer & Tatin Creative Fund Board Members</h3>
+                        <h3 class="article-title">The Healing Power of Forest Bathing: Reconnecting with Nature</h3>
                         <button>Read More<img src="./resources/images/Vector.svg" alt=""></button>
                     </a>
                 </div>
             </div>
         </section>
-        <section id="newsletter" class="container-large">
-            <div class="container padding-global vertical-padding">
-                <h2 >Never Miss a Single <span class="inverted">News</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et uis nostrud exercitation ullamco laboris nisi.</p>
-                <!-- fare restrizione email JavaScript -->
-                <form action="subscribe.php" method="post">
-                    <input type="email" name="email" id="email" placeholder="Enter your best email address...">
-                    <button type="submit" name="subscribe" id="submit">
-                        Subscribe
-                        <img src="./resources/images/arrow-star.svg" alt="">
-                    </button>
-                </form>
+        
+        <section class="padding-global">
+            <div id="newsletter" class="container-large">
+                <div class="container padding-global vertical-padding">
+                    <h2 >Never Miss a Single <span class="inverted">News</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor     incididunt ut labore et uis nostrud exercitation ullamco laboris nisi.</p>
+                    <!-- fare restrizione email JavaScript -->
+                    <form action="subscribe.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Enter your best email  address...">
+                        <button type="submit" name="subscribe" id="submit">
+                            Subscribe
+                            <img src="./resources/images/arrow-star.svg" alt="">
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
+
     </main>
 
-    <footer>
+    <footer class="padding-global container-large">
         <div class="upper border-bottom">
             <span class="heading">Let's start together.</span>
-            <span class="contact"><a href="tel:167712444227">1-677-124-44227</a> // <a href="mailto:hello@softlight.design">hello@softlight.design</a></span>
+            <span class="contact"><a href="tel:+167712444227">1-677-124-44227</a> // <a href="mailto:hello@softlight.design">hello@softlight.design</a></span>
         </div>
 
         <div class="middle border-bottom">
             <div>
-                <img class="logo" src="./resources/images/Logo.jpg" alt="">
+                <a href=""><img class="logo" src="./resources/images/Logo.jpg" alt=""></a>
             </div>
             <div class="col">
-                <h3>Pages</h3>
+                <h3>Menu</h3>
                 <a href="">Home</a>
                 <a href="">News</a>
             </div>
             <div class="col">
-                <h3>Contact</h3>
-                <a style="max-width: 20ch; line-height: 1.5;" href="">741 New South Head Rd, Triple Bay SWFW 3148, New York</a>
+                <h3>Location</h3>
+                <a href="">741 New South Head Rd, Triple Bay SWFW 3148, New York</a>
             </div>
             <div class="col">
                 <h3>Newsletter</h3>
@@ -160,18 +167,30 @@
                     <button style="background-color: #222;" type="submit" name="subscribe" id="submit">Stay Updated!</button>
                 </form>
                 <div class="social">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="bottom">
-            
+            <span>Copyright © Portlight | Designed by <a href="" style="text-decoration: none;">VictorFlow</a> | Hand-coded by <a href="" style="font-style: italic; text-decoration: none;">Giovanni Ruggieri</a>.</span>
         </div>
     </footer>
+
+    <!-- Pop up -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Hey!</h3>
+            <p>This pop-up was made with JavaScript.</p>
+            <p>To make this as less annoying as possible, if you reload the page the pop up <span style="font-weight: 700;">won't reappear</span> for <span style="font-weight: 700;" id="time-interval"></span>.</p>
+            <p>Please close this window and keep browsing!</p>
+        </div>
+    </div>
+  
 
 </body>
 </html>

@@ -150,11 +150,6 @@ button:hover > img {
 
 /* Header */
 
-header {
-    
-}
-
-
 header a {
     text-decoration: none;
     color: black;
@@ -185,10 +180,36 @@ header .content {
 }
 
 
-header ul li {
+header li {
     display: inline-block;
     padding: 0.5rem 1rem;
     font-weight: 600;
+}
+
+header li:has(.btn) {
+    padding: 0;
+}
+
+header li+li {
+    margin-left: 0.5rem;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 150ms ease-out;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+.btn.blue:hover {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
 }
 
 
@@ -218,18 +239,23 @@ header ul li {
     column-gap: 5rem;
 }
 
-.article .wrapper {
+.wrapper {
     overflow: hidden;
     height: 400px;
     margin-bottom: 1rem;
 }
 
-.article .thumbnail {
+img.thumbnail {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 300ms ease;
     opacity: 0.9;
+}
+
+img.thumbnail:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
 }
 
 a.article {
@@ -272,9 +298,16 @@ a.article:hover button > img {
 
 .category {
     padding: 1rem 1.5rem;
-    border: 2px solid #222;
+    border: 1px solid #222;
     border-radius: 3rem;
     cursor: pointer;
+    transition: all 50ms ease-out;
+}
+
+.category:active {
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
 }
 
 .inverted {
@@ -285,7 +318,7 @@ a.article:hover button > img {
 
 /* Newsletter */
 
-section#newsletter {
+#newsletter {
     background-color: black;
     background-image: url('../images/Pattern.webp');
     color: white;
@@ -340,6 +373,9 @@ form {
     margin: 0 auto;
 }
 
+form button:hover {
+    color: white;
+}
 
 /* Footer */
 
@@ -350,7 +386,6 @@ form {
 footer {
     font-family: 'Syne';
     padding-top: 5rem;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -384,18 +419,23 @@ footer .middle {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(100px, 200px) 0.5fr 1fr 1fr;
     gap: 2rem 2rem;
 }
 
 footer .middle h3 {
     margin: 0;
-    border: 1px solid red;
-    padding: 0px;
+    margin-bottom: 1rem;
+    line-height: 1;
+    font-size: 1.5rem;
+
+
 }
 
 footer .middle a {
     text-decoration: none;
+    max-width: 25ch;
+    line-height: 1.5;
     color: #222;
     font-weight: 600;
     transition: all 150ms ease-out;
@@ -411,6 +451,78 @@ footer .middle .col {
     row-gap: 0.5rem;
 }
 
+footer .middle .social {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .middle .social a+a {
+    margin-left: 0.5rem;
+}
+
 footer .logo {
     height: 40px;
 }
+
+footer .bottom {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+
+/* Pop up */
+
+/* CSS */
+.modal {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+  }
+
+  .modal-content h3 {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .modal-content p {
+    font-family: 'Syne';
+    font-size: 1.125rem;
+    max-width: 40ch;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem 1rem;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    cursor: pointer;
+  }
+  
+  
