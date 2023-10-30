@@ -7,19 +7,20 @@
 		<link rel="stylesheet" href="./resources/css/reset.css" />
 		<link rel="stylesheet" href="./resources/css/style.css" />
 		<script src="https://kit.fontawesome.com/943f79acea.js" crossorigin="anonymous"></script>
-		<script src="./resources/js/script.js" async></script>
+		<script type="text/javascript" src="./resources/js/script.js" defer></script>
+		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="content container-large padding-global">
-				<!-- Logo -->
-				<a href=""><img class="logo" src="./resources/images/Logo.jpg" alt="" /></a>
+				<!-- Navigation -->
+				<nav class="nav-bar container-large">
 
-				<nav class="desktop">
-					<!-- Navigation -->
-					<ul class="desktop">
-						<li><span class="line" style="width: 8px; height: 2px"></span></li>
-						<li><a href="">Home</a></li>
+					<!-- Logo -->
+					<a href=""><img class="logo padding-global" src="./resources/images/Logo.jpg" alt="" /></a>
+
+					<ul class="nav-menu">
+						<li><span class="line" style="width: 8px; height: 2px;"></span></li>
+						<li><a href="#">Home</a></li>
 						<li><a href="#blogs">News</a></li>
 						<li><a href="#newsletter">Contact</a></li>
 						<li>
@@ -29,47 +30,42 @@
 						</li>
 						<li><a href="" class="btn blue">Back to portfolio</a></li>
 					</ul>
-				</nav>
+					
+					<div class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					
 
-				<div class="hamburger">
-					<img src="" alt="" />
-				</div>
-
-				<nav class="mobile">
-					<!-- Navigation -->
-					<ul class="desktop">
-						<li><a href="">Home</a></li>
-						<li><a href="#blogs">News</a></li>
-						<li><a href="#newsletter">Contact</a></li>
-					</ul>
 				</nav>
-			</div>
 		</header>
 
 		<main>
-            
-		    <!-- Pop up -->
-            
-		    <div id="myModal" class="modal">
-		    	<div class="modal-content">
-		    		<span class="close">&times;</span>
-		    		<h3>Hey!</h3>
-		    		<p>This pop-up was made with JavaScript.</p>
-		    		<p>
-		    			To make this as less annoying as possible, if you reload the page the pop up
-		    			<span style="font-weight: 700">won't reappear</span> for
-		    			<span style="font-weight: 700" id="time-interval"></span>.
-		    		</p>
-		    		<p>Please close this window and keep browsing!</p>
-		    	</div>
-		    </div>
+			<!-- Pop up -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h3>Hey!</h3>
+					<p>This pop-up was made with JavaScript.</p>
+					<p>
+						To make this as less annoying as possible, if you reload the page the pop up
+						<span style="font-weight: 700">won't reappear</span> for
+						<span style="font-weight: 700" id="time-interval"></span>.
+					</p>
+					<p>Please close this window and keep browsing!</p>
+				</div>
+			</div>
+			<!-- End of Pop up -->
+
+			<!-- Hero -->
 			<section id="hero">
 				<div class="container-large vertical-padding padding-global">
 					<h1>Welcome to the Blog.</h1>
 					<article>
 						<div class="two-columns">
-							<div class="width-medium">
-								<div class="date" style="display: flex; column-gap: 1rem">
+							<div class="article-width">
+								<div class="date">
 									<span>Posted on October 8, 2023</span>
 									<div style="flex-grow: 1; margin: 0"><span class="line" style="width: 100%"></span></div>
 								</div>
@@ -96,10 +92,12 @@
 				</div>
 			</section>
 
-			<section class="container-large padding-global"><img src="./resources/images/Line-custom.png" alt="" /></section>
+			<section class="container-large padding-global">
+				<img style="width: 100%" src="./resources/images/Line-custom.png" alt="" />
+			</section>
+			<!-- End of Hero -->
 
 			<!-- Blogs -->
-
 			<section id="blogs">
 				<div class="container-large padding-global vertical-padding">
 					<div id="h2-container">
@@ -172,9 +170,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- End of Blogs -->
 
 			<!-- Newsletter -->
-
 			<section class="padding-global">
 				<div id="newsletter" class="container-large">
 					<div class="container padding-global vertical-padding">
@@ -183,17 +181,32 @@
 							Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et uis
 							nostrud exercitation ullamco laboris nisi.
 						</p>
-						<!-- fare restrizione email JavaScript -->
-						<form action="subscribe.php" method="post">
-							<input type="email" name="email" id="email" placeholder="Enter your best email  address..." />
-							<button type="submit" name="subscribe" id="submit">
+						<form
+							action="https://desengineers.us21.list-manage.com/subscribe/post?u=3715b7988fbb148e486083b7b&amp;id=ee2aef4112&amp;f_id=001be7e6f0"
+							method="post"
+							id="mc-embedded-subscribe-form">
+							<input
+								type="email"
+								name="EMAIL"
+								class="required email"
+								id="mce-EMAIL"
+								required=""
+								value=""
+								placeholder="Enter email here..." />
+							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
 								Subscribe
 								<img src="./resources/images/arrow-star.svg" alt="" />
 							</button>
+							<div id="mce-responses" class="clear foot">
+								<div class="response" id="mce-error-response" style="display: none"></div>
+								<div class="response" id="mce-success-response" style="display: none"></div>
+							</div>
 						</form>
 					</div>
 				</div>
 			</section>
+			<!-- End of Newsletter -->
+
 		</main>
 
 		<footer class="padding-global container-large">
@@ -201,7 +214,7 @@
 				<span class="heading">Let's start together.</span>
 				<span class="contact"
 					><a href="tel:+167712444227">1-677-124-44227</a> //
-					<a href="mailto:hello@softlight.design">hello@softlight.design</a></span
+					<a href="mailto:hello@poftlight.design">hello@poftlight.design</a></span
 				>
 			</div>
 
@@ -222,15 +235,45 @@
 				</div>
 				<div class="col">
 					<h3>Newsletter</h3>
-					<form action="" style="justify-content: flex-start">
-						<input type="email" name="email" id="email" placeholder="Enter your email..." />
-						<button style="background-color: #222" type="submit" name="subscribe" id="submit">Stay Updated!</button>
+					<form
+						action="https://desengineers.us21.list-manage.com/subscribe/post?u=3715b7988fbb148e486083b7b&amp;id=ee2aef4112&amp;f_id=001be7e6f0"
+						method="post"
+						id="mc-embedded-subscribe-form"
+						style="justify-content: flex-start">
+						<input
+							type="email"
+							name="EMAIL"
+							class="required email"
+							id="mce-EMAIL"
+							required=""
+							value=""
+							placeholder="Enter email here..." />
+						<button
+							style="background-color: #222"
+							type="submit"
+							name="subscribe"
+							id="mc-embedded-subscribe"
+							value="Subscribe">
+							Stay Updated!
+						</button>
+						<div id="mce-responses" class="clear foot">
+							<div class="response" id="mce-error-response" style="display: none"></div>
+							<div class="response" id="mce-success-response" style="display: none"></div>
+						</div>
 					</form>
 					<div class="social">
-						<a href=""><i class="fa-brands fa-instagram"></i></a>
-						<a href=""><i class="fa-brands fa-facebook"></i></a>
-						<a href=""><i class="fa-brands fa-twitter"></i></a>
-						<a href=""><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+						<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+							><i class="fa-brands fa-facebook"></i
+						></a>
+						<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+							><i class="fa-brands fa-twitter"></i
+						></a>
+						<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+							><i class="fa-brands fa-linkedin"></i
+						></a>
 					</div>
 				</div>
 			</div>
@@ -242,6 +285,5 @@
 				>
 			</div>
 		</footer>
-
 	</body>
 </html>
