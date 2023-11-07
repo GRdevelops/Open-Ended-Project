@@ -54,7 +54,7 @@ document.querySelectorAll('.category').forEach((button) => {
 	button.addEventListener('click', (event) => {
 		const category = button.id;
 
-		document.querySelectorAll('.category').forEach((category) => { 
+		document.querySelectorAll('.category').forEach((category) => {
 			category.classList.remove('inverted');
 		});
 
@@ -99,14 +99,20 @@ var $mcj = jQuery.noConflict(true);
 
 // Nav-bar
 const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelectorAll('.nav-menu');
+const navMenus = document.querySelectorAll('.nav-menu');
+const links = document.querySelectorAll('.nav-menu a');
 
-const handleMenu = () => {
-	console.log("Hamburger clicked!");
+// Toggle function
+const toggleMenu = () => {
 	hamburger.classList.toggle('active');
-	navMenu.forEach(element => element.classList.toggle('active'));
-}
+	navMenus.forEach((menu) => menu.classList.toggle('active'));
+};
 
-hamburger.addEventListener('click', handleMenu);
+// Event Handlers
+hamburger.addEventListener('click', toggleMenu);
+
+links.forEach((link) => {
+	link.addEventListener('click', toggleMenu);
+});
 
 // End of nav-bar
