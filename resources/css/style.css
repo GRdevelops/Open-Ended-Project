@@ -545,7 +545,7 @@ form button {
 	border: 1px solid white;
 	border-radius: 2rem;
 	padding: 0.7rem 1.3rem;
-	margin-right: -1.3rem;
+	margin-right: -1rem;
 }
 
 form button:hover {
