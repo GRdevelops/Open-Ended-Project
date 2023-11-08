@@ -1,5 +1,4 @@
 // Pop-up //
-
 const modal = document.getElementById('myModal');
 const closeButton = document.getElementsByClassName('close')[0];
 
@@ -44,12 +43,10 @@ if (minutes < 1) {
 } else {
 	timeRemaining.innerHTML = `${minutes} minutes`;
 }
-
 // End of pop-up //
 
 // Articles //
-
-// Add click event listeners to category buttons
+// Event listeners to category buttons
 document.querySelectorAll('.category').forEach((button) => {
 	button.addEventListener('click', (event) => {
 		const category = button.id;
@@ -64,9 +61,9 @@ document.querySelectorAll('.category').forEach((button) => {
 	});
 });
 
-// Filter articles
+// Filter articles by data attribute
 const filterArticles = (category) => {
-	const articles = document.querySelectorAll('.article');
+	const articles = document.querySelectorAll('.articles .article');
 	articles.forEach((article) => {
 		if (article.getAttribute('data-category') === category || category === 'all') {
 			article.style.display = ''; // Show the article
@@ -75,7 +72,6 @@ const filterArticles = (category) => {
 		}
 	});
 };
-
 // End of articles //
 
 // Mailchimp forms
