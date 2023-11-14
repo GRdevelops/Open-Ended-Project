@@ -21,9 +21,6 @@ This website was deployed using GitHub Pages: https://grdevelops.github.io/Welco
 - `index.html`: The main HTML file that contains the structure of the web page.
 - `resources/`: Contains CSS and JavaScript code, along with images and fonts.
 
-3. Open `index.html` in your browser to view the project.
-
-
 ## Contact
 For any inquiries or suggestions regarding this project, feel free to reach out:
 - **Name**: Giovanni Ruggieri
