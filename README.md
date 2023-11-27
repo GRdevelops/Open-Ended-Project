@@ -1,15 +1,19 @@
 # Welcome to the blog
 
-## Introduction
-This repository contains the source code for my web project, a simple blog homepage with additional Javascript functionality.
+Welcome to the Blog was conceived as a straightforward yet robust blog homepage, marking my second coding project. 
 
-## Deployment
-This website was deployed using GitHub Pages: https://grdevelops.github.io/Welcome-To-The-Blog/
+I meticulously chose descriptive names for CSS classes and JavaScript functions to ensure code clarity and maintainability. 
+
+In terms of layout, I made sure to keep an overall consistent design with flexbox/grids. 
+
+A key feature was integrating Mailchimp for email collection. 
+
+Utilizing vanilla JavaScript, I implemented a pop-up that stays closed if you reload the page and a sorting functionality that shows posts relative to the selected category.
 
 ## Features
 - Responsive web design ensuring compatibility across various devices and screen sizes.
-- Sort articles by category.
-- Javascript pop up that has a persistent timer even on reload.
+- Sort articles by category thanks to Javascript.
+- Javascript pop-up that has a persistent timer even on reload.
 - Clean and modern user interface.
 
 ## Technologies Used
@@ -21,11 +25,13 @@ This website was deployed using GitHub Pages: https://grdevelops.github.io/Welco
 - `index.html`: The main HTML file that contains the structure of the web page.
 - `resources/`: Contains CSS and JavaScript code, along with images and fonts.
 
-## Contact
-For any inquiries or suggestions regarding this project, feel free to reach out:
-- **Name**: Giovanni Ruggieri
-- **Email**: gianniruggieri99@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/giovanniru/
-- **GitHub**: https://github.com/GRdevelops
+## Deployment
+This website was deployed using GitHub Pages: https://grdevelops.github.io/Welcome-To-The-Blog/
 
-Thank you for exploring my project. I welcome any feedback or contributions!
+## Contact
+
+- **Email**: gianniruggieri@outlook.com
+- **Portfolio**: https://www.desengineers.co/
+- **GitHub Profile**: https://github.com/GRdevelops/
+
+Thank you for exploring my project.
